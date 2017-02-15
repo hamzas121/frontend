@@ -27,7 +27,7 @@ border-radius:20px;
 height: 750px;
 width: 100%;
 margin-top:-10px; 
-background-color:black;
+background-color:grey;
 position: relative;
 z-index: 1;
 }
@@ -45,6 +45,24 @@ position: relative;
 z-index: -1;
 }
 
+#image1 {
+position: absolute;
+left: 0;
+z-index: 10;
+
+}
+
+#image1:hover{
+  
+  animation-name:test;
+  animation-duration:3s;
+}
+
+@keyframes test{
+  from{height: :100%;}
+  to{height: 0%;}
+}
+
 a.button	{
 border:2px transparent;
 padding:2px 5px 2px 5px;
@@ -54,6 +72,28 @@ color:#ffffff;
 font-family:tahoma;
 text-decoration:none;
 text-align:center;
+transition-duration: 0.4s;
+overflow: hidden;
+cursor: pointer;
+}
+
+a.button:after {
+    content: "";
+    background: #a3a3a3;
+    display: block;
+    position: absolute;
+    padding-top: 40%;
+    padding-left: 120%;
+    margin-left: -20px!important;
+    margin-top: -40%;
+    opacity: 0;
+    transition: all 0.8s
+}
+a.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
 
 a.button:hover{
@@ -86,21 +126,21 @@ font-family:san-serif;}
 }
 
 
-@media (max-width: 1400px) {		
-	h1{padding: 4em 0;}
+
+@media (min-width: 1400px) {		
+	
 }
 
-@media (max-width: 1200px) {
-	h3{font-size: 1.5em;margin-bottom: 0.5em;}
+@media (min-width: 1200px) {
+	
 }	
 
-@media (max-width: 900px) {
-	.items-wrap .gallery-items .caption:hover h3{margin-top: 20%;}
+@media (min-width: 900px) {
+	
 }	
 
-@media (max-width: 767px) {
-	h1{padding: 4em 0 0 0;font-size: 2em;}
-	.spacer{padding: 2em 0;}
+@media (min-width: 767px) {
+	
 
 }
 
