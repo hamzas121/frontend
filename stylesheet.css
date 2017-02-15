@@ -3,6 +3,7 @@ margin: 0px;
 padding: 0px;
 }
 
+
 .wrapper 	{
 position: relative;
 height: 100vh;
@@ -32,9 +33,9 @@ position: relative;
 z-index: 1;
 }
 
-body, html, .main {
-    height: 100%;
-}
+
+
+
 
 section {
     min-height: 100%;
@@ -51,6 +52,7 @@ left: 0;
 z-index: 10;
 
 }
+
 
 #image1:hover{
   
@@ -101,6 +103,45 @@ color:#a3a3a3;}
 
 h1 {
     font-size: 200%;
+    position: absolute;
+    top: 5%;
+   right:47%;
+   color: white;
+  }
+h2 {
+    font-size: 300%;
+  }
+
+#header nav {
+    position: relative;
+    left: 40%;
+    top: 0;
+    height: 3em;
+    line-height: 1em;
+}
+
+#header {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #333;
+    height: 3em;
+    line-height: 3em;
+}
+
+li {
+    float:left;
+    list-style-type: none;
+}
+li a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    font-family:Arial;
+
 }
 
 #dealsbutton{
@@ -108,8 +149,6 @@ position: absolute;
 top: 40%;
 left: 15%;
 }
-
-#home{padding-top: 6em;}
 
 
 p
@@ -231,3 +270,47 @@ font-family:san-serif;}
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
+
+footer {
+    margin-top: 2em;
+  }
+
+  
+
+article{
+    display: block;
+  }
+
+  .gallery {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 50em;
+    max-width: 100%;
+    
+
+  }
+  /*gallery.wrapper{
+  background-image: url("img/bg3.jpg")
+
+  }*/
+
+    .gallery article {
+      width: 50%;
+      position: relative;
+    }
+
+
+    @media screen and (max-width: 480px) {
+    .gallery article {
+          width: 100%;
+        }
+       }
+
+
