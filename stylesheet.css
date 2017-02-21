@@ -38,9 +38,6 @@ z-index: 1;
 }
 
 
-
-
-
 section {
     min-height: 100%;
 }
@@ -57,18 +54,6 @@ z-index: 10;
 
 }
 
-
-#image1:hover{
-  
-  animation-name:test;
-  animation-duration:3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes test{
-  from{height: :100%;}
-  to{height: 0%;}
-}
 
 a.button	{
 border:2px transparent;
@@ -299,6 +284,7 @@ article{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 45em;
+    height: 40em;
     max-width: 100%;
     padding-top: 40px;
   }
@@ -324,5 +310,9 @@ article{
           width: 100%;
         }
        }
+
+  #audi {
+    margin-left: 30%;
+  }     
 
 

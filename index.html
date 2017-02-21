@@ -21,9 +21,9 @@
         <nav>
           <ul>
             <li><a id="show" href="#content">Showrooms</a></li>
-            <li><a href="#gallery">BMW</a></li>
-            <li><a href="#Audi">Audi</a></li>
-            <li><a href="#Mercedes">Mercedes</a></li>
+            <li><a href="#bmw">BMW</a></li>
+            <li><a href="#audi">Audi</a></li>
+            <li><a href="#mercedes">Mercedes</a></li>
           </ul>
         </nav>
       </header>
@@ -37,7 +37,11 @@
 
         </div>
         <img id="image" src="img/bg1.jpg" height="100%" width="100%" />
+        <div class="hov">
+          <div class="hidder">
         <img id="image1" src="img/garage1.jpg" height="100%" width="100%">
+      </div>
+      </div>
       </section>
 
       <section class="car wrapper">
@@ -103,22 +107,35 @@
                 <a href="img/bmw2.jpg" class="image"><img src="img/bmw2.jpg" title="BMW X5" alt="" /></a>
               </article>
               <article>
-                <a href="img/bmw3.jpg" class="image"><img src="img/bmw3.jpg" title="Air Lounge" alt="" /></a>
+                <a href="img/bmw3.jpg" class="image"><img src="img/bmw3.jpg" title="5 series" alt="" /></a>
               </article>
               <article>
-                <a href="img/bmw4.jpg" class="image"><img src="img/bmw4.jpg" title="BMW 1 seires" alt="" /></a>
+                <a href="img/bmw4.jpg" class="image"><img src="img/bmw4.jpg" title="BMW 1 series" alt="" /></a>
               </article>
               <article>
-                <a href="img/bmw5.jpg" class="image" cl><img src="img/bmw5.jpg" title="The sparkling shell" alt="" /></a>
+                <a href="img/bmw5.jpg" class="image" cl><img src="img/bmw5.jpg" title="7 series" alt="" /></a>
               </article>
               <article>
-                <a href="img/bmw6.jpg" class="image"><img src="img/bmw6.jpg" title="Bent IX" alt="" /></a>
+                <a href="img/bmw6.jpg" class="image"><img src="img/bmw6.jpg" title="I8" alt="" /></a>
               </article>
             </div>
 
         </section>
       </section>
 
+
+
+      <section id="audi" class="audi wrapper">
+            <h1>AUdi</h1>
+
+        <div class="slideshow" style="max-width:500px">
+        <img class="mySlides" src="img/audia.jpg" style="width:100%">
+        <img class="mySlides" src="img/audir.jpg" style="width:100%">
+        <img class="mySlides" src="img/audiq.jpg" style="width:100%">
+        </div>
+
+        
+      </section>
 
          <br>
         
@@ -141,6 +158,21 @@
       </footer>
 
      </section> 
+<script>
+var myIndex = 0;
+carousel();
 
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
   </body>
 </html>

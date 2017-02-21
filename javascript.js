@@ -23,7 +23,7 @@ $(document).ready(function(){
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
+    $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
    
@@ -32,24 +32,37 @@ $(document).ready(function(){
       });
     } // End if
   });
-});
-
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("image1").on('click', function(event) {
-
- // End if
-  });
-});
-
 
   
-$('.myCarousel').swipe( {
-     swipeLeft: function() {
-         $(this).carousel('next');
-     },
-     swipeRight: function() {
-         $(this).carousel('prev');
-     },
-     allowPageScroll: 'vertical'
- });
+
+  $('.hov').hover(function() {
+
+    $( "#image1" ).slideUp(1000);
+
+    $.doTimeout( 300, function() {
+        hideClosedSearchLink();
+        showHomeSearch();
+    });
+
+    // Again taking into account what lasseespeholt said
+    $(this).unbind('mouseenter mouseleave')
+
+});
+
+});
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName(".mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
