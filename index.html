@@ -15,22 +15,23 @@
   </head>
 
   <body>
-
-<header id="header">
+    
+    <!-- Nav bar -->
+    <header id="header">
         <h1></h1>
         <nav>
           <ul>
             <li><a id="show" href="#content">Showrooms</a></li>
             <li><a href="#bmw">BMW</a></li>
             <li><a href="#audi">Audi</a></li>
-            <li><a href="#mercedes">Mercedes</a></li>
+            <li><a href="#merc">Mercedes</a></li>
           </ul>
         </nav>
       </header>
 
 
     <section class="main wrapper">
-
+      <!-- Top wrapper -->
       <section class="top wrapper">
         <div id="dealsbutton"> 
           <a class="button" href="#content"><h2>Deal on Wheels</h2></a>
@@ -44,13 +45,14 @@
       </div>
       </section>
 
+      <!-- Garage section -->
       <section class="car wrapper">
         <div id="content">
           <div class="col-lg-8 col-md-4 col-sm-8 col-xs-8">
             <div class="hovereffect">
               <img id="carlogo" class="img-responsive" src="img/audil.png" alt="">
               <div class="overlay">
-                <p><a href="page2.html"><h2> Audi Showroom</h2></a></p> 
+                <p><a href="#audi"><h2> Audi Showroom</h2></a></p> 
              </div>
             </div>
              </div>
@@ -59,7 +61,7 @@
             <div class="hovereffect">
               <img id="carlogo" class="img-responsive" src="img/bmw.png" alt="">
               <div class="overlay">
-                <p><a href="page3.html"><h2> BMW Showroom</h2></a></p> 
+                <p><a href="#bmw"><h2> BMW Showroom</h2></a></p> 
               </div>
             </div>
           </div>
@@ -68,7 +70,7 @@
             <div class="hovereffect">
               <img id="carlogo" class="img-responsive" src="img/merc1.png" alt="">
               <div class="overlay">
-                <p><a href="page4.html"><h2> Mercedes Showroom</h2></a></p> 
+                <p><a href="#mercedes"><h2> Mercedes Showroom</h2></a></p> 
               </div>
             </div>
           </div>
@@ -81,19 +83,10 @@
               </div>
             </div>
           </div>
-
-         <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect">
-              <img id="carlogo" class="img-responsive" src="img/close.png" alt="">
-              <div class="overlay">
-                <p><a href="page5.html"><h2> Alpha Romero Showroom </h2></a></p> 
-              </div>
-            </div>
-          </div>-->
-         
         </div>
       </section>
  
+        <!-- BMW -->
         <section id="bmw" class="bmw wrapper">
             <h1>BMW</h1>
 
@@ -101,22 +94,22 @@
            <div class="gallery">
 
               <article>
-                <a href="img/bmw11.jpg" class="image"><img src="img/bmw11.jpg" title="BMW 3 Series" alt="" /></a>
+                <a href="img/bmw/bmw12.jpg" class="image"><img src="img/bmw/bmw11.jpg" title="BMW 3 Series" alt="" /></a>
               </article>
               <article>
-                <a href="img/bmw2.jpg" class="image"><img src="img/bmw2.jpg" title="BMW X5" alt="" /></a>
+                <a href="img/bmw/bmw2.jpg" class="image"><img src="img/bmw/bmw2.jpg" title="BMW X5" alt="" /></a>
               </article>
               <article>
-                <a href="img/bmw3.jpg" class="image"><img src="img/bmw3.jpg" title="5 series" alt="" /></a>
+                <a href="img/bmw/bmw31.jpg" class="image"><img src="img/bmw/bmw3.jpg" title=" BMW M3" alt="" /></a>
               </article>
               <article>
-                <a href="img/bmw4.jpg" class="image"><img src="img/bmw4.jpg" title="BMW 1 series" alt="" /></a>
+                <a href="img/bmw/bmw41.jpg" class="image"><img src="img/bmw/bmw4.jpg" title="BMW 1 series" alt="" /></a>
               </article>
               <article>
-                <a href="img/bmw5.jpg" class="image" cl><img src="img/bmw5.jpg" title="7 series" alt="" /></a>
+                <a href="img/bmw/bmw51.jpg" class="image" cl><img src="img/bmw/bmw5.jpg" title="7 series" alt="" /></a>
               </article>
               <article>
-                <a href="img/bmw6.jpg" class="image"><img src="img/bmw6.jpg" title="I8" alt="" /></a>
+                <a href="img/bmw/bmw61.jpg" class="image"><img src="img/bmw/bmw6.jpg" title="I8" alt="" /></a>
               </article>
             </div>
 
@@ -124,40 +117,78 @@
       </section>
 
 
-
+      <!-- Audi -->
       <section id="audi" class="audi wrapper">
-            <h1>AUdi</h1>
-
-        <div class="slideshow" style="max-width:500px">
-        <img class="mySlides" src="img/audia.jpg" style="width:100%">
-        <img class="mySlides" src="img/audir.jpg" style="width:100%">
-        <img class="mySlides" src="img/audiq.jpg" style="width:100%">
+            <h1>AUDI</h1>
+        <div id="slideshow">
+        <div class="slideshow">
+        <img class="mySlides" src="img/audi/audia.jpg" style="width:100%">
+        
+        <img class="mySlides" src="img/audi/audir.jpg" style="width:100%">
+        
+        <img class="mySlides" src="img/audi/audiq.jpg" style="width:100%">
+        
+        <img class="mySlides" src="img/audi/audi1.jpg" style="width:100%">
         </div>
-
+        </div>
         
       </section>
 
-         <br>
+    <!-- Mercedes -->
+      <section id="merc" class="merc wrapper">
+            <h1>Mercedes</h1>
+        <div class="slider">
+  <input type="radio" name="slide_switch" id="id1"/>
+  <label for="id1">
+    <img src="img/merc/merc1.jpg" width="100"/>
+  </label>
+  <img src="img/merc/merc1.jpg"/>
+  
+  <input type="radio" name="slide_switch" id="id2" checked="checked"/>
+  <label for="id2">
+    <img src="img/merc/merc2.jpg" width="100"/>
+  </label>
+  <img src="img/merc/merc2.jpg"/>
+  
+  <input type="radio" name="slide_switch" id="id3"/>
+  <label for="id3">
+    <img src="img/merc/merc3.jpg" width="100"/>
+  </label>
+  <img src="img/merc/merc3.jpg"/>
+  
+  <input type="radio" name="slide_switch" id="id4"/>
+  <label for="id4">
+    <img src="img/merc/merc4.jpg" width="100"/>
+  </label>
+  <img src="img/merc/merc4.jpg"/>
+  
+  <input type="radio" name="slide_switch" id="id5"/>
+  <label for="id5">
+    <img src="img/merc/merc5.jpg" width="100"/>
+  </label>
+  <img src="img/merc/merc5.jpg"/>
+</div>
+        
+      </section>
+
+         
         
      <!-- Footer -->
       <footer id="footer">
 
-        <!-- Icons -->
           <ul class="actions">
             <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
             <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-           
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a>
+            </li>
+           <li><a>&copy; Hamza Shahid</a></li>
           </ul>
-
-        <!-- Menu -->
-          <ul class="menu">
-            <li>&copy; Hamza Shahid</li>
-          </ul>
-
+            
       </footer>
 
      </section> 
+
+
 <script>
 var myIndex = 0;
 carousel();

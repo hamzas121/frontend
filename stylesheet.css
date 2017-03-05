@@ -128,13 +128,17 @@ li {
 li a {
     display: block;
     color: white;
-    padding: 16px;
+    padding: 17px;
     text-decoration: none;
     font-family:Arial;
     letter-spacing: 0.125em;
 
-
 }
+
+footer li a{
+  color: black;
+}
+
 
 #dealsbutton{
 position: absolute;
@@ -148,8 +152,7 @@ p
   line-height: 1.7em;
 color: white}
 
-p.footer {font-size:80%;
-font-family:san-serif;}
+
 
 
 #stylesheets {
@@ -158,22 +161,6 @@ font-family:san-serif;}
 
 
 
-@media (min-width: 1400px) {		
-	
-}
-
-@media (min-width: 1200px) {
-	
-}	
-
-@media (min-width: 900px) {
-	
-}	
-
-@media (min-width: 767px) {
-	
-
-}
 
 .hovereffect {
   height: 100%;
@@ -184,10 +171,7 @@ font-family:san-serif;}
   cursor: default;
 }
 
-/*.overlay {
-	background-color: #FFF;
-	color: #000;
-}*/
+
 
 .hovereffect .overlay {
   position: absolute;
@@ -263,11 +247,6 @@ font-family:san-serif;}
   transform: translate3d(0,0,0);
 }
 
-
-footer {
-    margin-top: 2em;
-  }
-
   
 
 article{
@@ -310,9 +289,79 @@ article{
           width: 100%;
         }
        }
+       
 
   #audi {
-    margin-left: 30%;
-  }     
+      background-image: url("img/bg4.jpg");
+  }
+
+  #slideshow {
+      margin-left: 30%;
+      max-width:800px
+
+      }
+
+
+#merc {
+      background-image: url("img/bg4.jpg");
+    
+  }
+.slider{
+  width: 640px; /*Same as width of the large image*/
+  position: relative;
+  padding-top: 320px; /*this allows the labels to come down*/
+  margin: 100px auto;
+  /*shadow effect around the image*/
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+  top: 150px;
+
+}
+
+
+/*this adds in the transitions*/
+.slider>img{
+  position: absolute;
+  left: 0; top: 0;
+  transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+  display: none;
+}
+
+.slider label {
+  /*spacing for the thumbnails*/
+  margin: 18px 0 0 18px;
+  border: 3px solid #999;
+  float: left;
+  cursor: pointer;
+  transition: all 0.5s;
+  
+  /*low opacity*/
+  opacity: 0.6;
+}
+
+.slider label img{
+  display: block;
+}
+
+/*click effects*/
+.slider input[name='slide_switch']:checked+label {
+  border-color: #666;
+  opacity: 1;
+}
+
+/*Clicking any thumbnail now should change its opacity(style)*/
+.slider input[name='slide_switch'] ~ img {
+  opacity: 0;
+  transform: scale(1.1);
+}
+/*This hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+  opacity: 1;
+  transform: scale(1);
+}
 
 
