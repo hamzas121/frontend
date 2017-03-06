@@ -7,10 +7,8 @@ html {
   height: 100%;
 }
 
-
 .wrapper 	{
 position: relative;
-height: 100vh;
 width:100%;
 border:2px transparent;
 margin-right: auto;
@@ -20,12 +18,11 @@ background-color: transparent;
 font-family:tahoma;
 text-decoration:none;
 text-align: center;
-border-radius:20px;
 }
 
 #carlogo{
 	float:left;
-	padding:50px;
+	padding:40px;
 }
 
 #content {
@@ -51,7 +48,6 @@ z-index: -1;
 position: absolute;
 left: 0;
 z-index: 10;
-
 }
 
 
@@ -93,9 +89,6 @@ color:#a3a3a3;}
 
 h1 {
     font-size: 200%;
-    position: absolute;
-    top: 5%;
-   right:47%;
    color: white;
   }
 h2 {
@@ -103,11 +96,14 @@ h2 {
   }
 
 #header nav {
-    position: relative;
-    left: 35%;
-    top: 0;
+    width: 50%;
+    margin: 0 auto;
     height: 3em;
     line-height: 1em;
+}
+
+#header nav ul {
+  margin-left: 22.5%;
 }
 
 #header {
@@ -121,6 +117,13 @@ h2 {
     line-height: 3em;
 }
 
+@media screen and (max-width: 571px) {
+    p {
+      font-size: 10px;
+        }
+       }
+
+
 li {
     float:left;
     list-style-type: none;
@@ -132,7 +135,6 @@ li a {
     text-decoration: none;
     font-family:Arial;
     letter-spacing: 0.125em;
-
 }
 
 footer li a{
@@ -146,21 +148,26 @@ top: 40%;
 left: 15%;
 }
 
+@media screen and (max-width: 1000px) {
+    h2 {
+      font-size: 25px;
+        }
+       }
+@media screen and (max-width: 571px) {
+    h2 {
+      font-size: 15px;
+        }
+       }
+
 
 p
 { padding: 0 0 20px 0;
   line-height: 1.7em;
 color: white}
 
-
-
-
 #stylesheets {
     text-align: left;
 }
-
-
-
 
 .hovereffect {
   height: 100%;
@@ -170,8 +177,6 @@ color: white}
   text-align: center;
   cursor: default;
 }
-
-
 
 .hovereffect .overlay {
   position: absolute;
@@ -198,22 +203,22 @@ color: white}
   transform: scale(1);
 }
 
-.hovereffect img {
+  .hovereffect img {
   display: block;
   position: relative;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
- width:  350px;
+  width:  80%;
   height: 250px;
-}
+  }
 
-.hovereffect:hover img {
+  .hovereffect:hover img {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
   filter: brightness(0.6);
   -webkit-filter: brightness(0.6);
-}
+  }
 
-.hovereffect h2 {
+  .hovereffect h2 {
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -227,9 +232,9 @@ color: white}
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(0,-100%,0);
   transform: translate3d(0,-100%,0);
-}
+  }
 
-.hovereffect a, hovereffect p {
+  .hovereffect a, hovereffect p {
   color: #FFF;
   padding: 1em 0;
   opacity: 0;
@@ -238,18 +243,18 @@ color: white}
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(0,100%,0);
   transform: translate3d(0,100%,0);
-}
+  }
 
-.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-}
+  }
 
   
 
-article{
+  article{
     display: block;
   }
 
@@ -263,9 +268,7 @@ article{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 45em;
-    height: 40em;
     max-width: 100%;
-    padding-top: 40px;
   }
 
 
@@ -296,40 +299,38 @@ article{
   }
 
   #slideshow {
-      margin-left: 30%;
+      margin: 0 auto;
       max-width:800px
-
       }
 
 
-#merc {
+  #merc {
       background-image: url("img/bg4.jpg");
+  height: 500px;
     
   }
-.slider{
+  .slider{
   width: 640px; /*Same as width of the large image*/
   position: relative;
   padding-top: 320px; /*this allows the labels to come down*/
   margin: 100px auto;
   /*shadow effect around the image*/
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
-  top: 150px;
+  margin: 0 auto;
+  }
 
-}
-
-
-/*this adds in the transitions*/
-.slider>img{
+  /*this adds in the transitions*/
+  .slider>img{
   position: absolute;
   left: 0; top: 0;
   transition: all 0.5s;
-}
+  }
 
-.slider input[name='slide_switch'] {
+  .slider input[name='slide_switch'] {
   display: none;
-}
+  }
 
-.slider label {
+  .slider label {
   /*spacing for the thumbnails*/
   margin: 18px 0 0 18px;
   border: 3px solid #999;
@@ -339,29 +340,28 @@ article{
   
   /*low opacity*/
   opacity: 0.6;
-}
+  }
 
-.slider label img{
+  .slider label img{
   display: block;
-}
+  }
 
-/*click effects*/
-.slider input[name='slide_switch']:checked+label {
+  /*click effects*/
+  .slider input[name='slide_switch']:checked+label {
   border-color: #666;
   opacity: 1;
-}
+  }
 
-/*Clicking any thumbnail now should change its opacity(style)*/
-.slider input[name='slide_switch'] ~ img {
+  /*Clicking any thumbnail now should change its opacity(style)*/
+  .slider input[name='slide_switch'] ~ img {
   opacity: 0;
   transform: scale(1.1);
-}
-/*This hides all main images at a 110% size
-On click the images will be displayed at normal size to complete the effect
-*/
-.slider input[name='slide_switch']:checked+label+img {
+  }
+  /*This hides all main images at a 110% size
+  On click the images will be displayed at normal size to complete the effect
+  */
+  .slider input[name='slide_switch']:checked+label+img {
   opacity: 1;
   transform: scale(1);
-}
-
-
+  }
+       }

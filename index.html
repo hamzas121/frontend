@@ -9,22 +9,19 @@
     
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <script src="javascript.js"></script>
-
+ 
   </head>
 
   <body>
     
     <!-- Nav bar -->
     <header id="header">
-        <h1></h1>
         <nav>
           <ul>
-            <li><a id="show" href="#content">Showrooms</a></li>
-            <li><a href="#bmw">BMW</a></li>
-            <li><a href="#audi">Audi</a></li>
-            <li><a href="#merc">Mercedes</a></li>
+            <li><a id="show" href="#content"><p>Showrooms</p></a></li>
+            <li><a href="#bmw"><p>BMW</p></a></li>
+            <li><a href="#audi"><p>Audi</p></a></li>
+            <li><a href="#merc"><p>Mercedes</p></a></li>
           </ul>
         </nav>
       </header>
@@ -35,7 +32,6 @@
       <section class="top wrapper">
         <div id="dealsbutton"> 
           <a class="button" href="#content"><h2>Deal on Wheels</h2></a>
-
         </div>
         <img id="image" src="img/bg1.jpg" height="100%" width="100%" />
         <div class="hov">
@@ -187,23 +183,8 @@
       </footer>
 
      </section> 
-
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="javascript.js"></script>
+ <script src="slideshow.js"></script>
   </body>
 </html>
