@@ -1,190 +1,289 @@
+
 <!DOCTYPE HTML>
 
 <html>
-  <head>
-    
 
+<head>
+
+    <!-- this is the title of the page  -->
     <title> Deal on Wheels </title>
 
-    
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-  </head>
 
-  <body>
-    
-    <!-- Nav bar -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <!-- The navbar is a list with all the links to the area on the webpage -->
     <header id="header">
         <nav>
-          <ul>
-            <li><a id="show" href="#content"><p>Showrooms</p></a></li>
-            <li><a href="#bmw"><p>BMW</p></a></li>
-            <li><a href="#audi"><p>Audi</p></a></li>
-            <li><a href="#merc"><p>Mercedes</p></a></li>
-          </ul>
+            <ul>
+                <li>
+                    <a id="show" href="#content">
+                        <p>Showrooms</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#bmw">
+                        <p>BMW</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#audi">
+                        <p>Audi</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#merc">
+                        <p>Mercedes</p>
+                    </a>
+                </li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
-
+    <!-- this is the main wrapper for the whole website -->
     <section class="main wrapper">
-      <!-- Top wrapper -->
-      <section class="top wrapper">
-        <div id="dealsbutton"> 
-          <a class="button" href="#content"><h2>Deal on Wheels</h2></a>
-        </div>
-        <img id="image" src="img/bg1.jpg" height="100%" width="100%" />
-        <div class="hov">
-          <div class="hidder">
-        <img id="image1" src="img/garage1.jpg" height="100%" width="100%">
-      </div>
-      </div>
-      </section>
-
-      <!-- Garage section -->
-      <section class="car wrapper">
-        <div id="content">
-          <div class="col-lg-8 col-md-4 col-sm-8 col-xs-8">
-            <div class="hovereffect">
-              <img id="carlogo" class="img-responsive" src="img/audil.png" alt="">
-              <div class="overlay">
-                <p><a href="#audi"><h2> Audi Showroom</h2></a></p> 
-             </div>
+        <!-- Top wrapper -->
+        <section class="top wrapper">
+            <!-- this is the dealbutton on the frist page section -->
+            <div id="dealsbutton">
+                <a class="button" href="#content">
+                    <h2>Deal on Wheels</h2>
+                </a>
             </div>
-             </div>
-
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect">
-              <img id="carlogo" class="img-responsive" src="img/bmw.png" alt="">
-              <div class="overlay">
-                <p><a href="#bmw"><h2> BMW Showroom</h2></a></p> 
-              </div>
+            <!-- iamge of the backgrounf for the first section -->
+            <img id="image" src="img/bg1.jpg" height="100%" width="100%" />
+            <!-- this class=hov is from the javascript to make the garage slide up -->
+            <div class="hov">
+                <div class="hidder">
+                    <!-- image of the garage -->
+                    <img id="image1" src="img/garage1.jpg" height="100%" width="100%">
+                </div>
             </div>
-          </div>
+        </section>
 
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect">
-              <img id="carlogo" class="img-responsive" src="img/merc1.png" alt="">
-              <div class="overlay">
-                <p><a href="#mercedes"><h2> Mercedes Showroom</h2></a></p> 
-              </div>
-            </div>
-          </div>
+        <!-- Garage section -->
+        <!-- car wrapper is the wrapper for the this section the code below uses 
+        bootstrap for the hover effect and the images of the logos. -->
+        <section class="car wrapper">
+            <div id="content">
 
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect">
-              <img id="carlogo" class="img-responsive" src="img/com.png" alt="">
-              <div class="overlay">
-                <p><a href="page5.html"><h2> Tesla Showroom </h2></a></p> 
-              </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img id="carlogo" class="img-responsive" src="img/bmw.png" alt="">
+                        <div class="overlay">
+                            <p>
+                                <a href="#bmw">
+                                    <h2> BMW Showroom</h2>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-4 col-sm-8 col-xs-8">
+                    <div class="hovereffect">
+                        <img id="carlogo" class="img-responsive" src="img/audil.png" alt="">
+                        <div class="overlay">
+                            <p>
+                                <a href="#audi">
+                                    <h2> Audi Showroom</h2>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img id="carlogo" class="img-responsive" src="img/merc1.png" alt="">
+                        <div class="overlay">
+                            <p>
+                                <a href="#mercedes">
+                                    <h2> Mercedes Showroom</h2>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img id="carlogo" class="img-responsive" src="img/com.png" alt="">
+                        <div class="overlay">
+                            <p>
+                                <a href="page5.html">
+                                    <h2> Tesla Showroom </h2>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
- 
-        <!-- BMW -->
+        </section>
+
+        <!-- BMW section -->
+        <!-- this section has the gallery wrapper which allows all the images to be
+        placed in that style with all the images there and enlarged iamges as well
+        when the images is clicked on -->
         <section id="bmw" class="bmw wrapper">
             <h1>BMW</h1>
 
-        <section class="gallery wrapper">
-           <div class="gallery">
+            <section class="gallery wrapper">
+                <div class="gallery">
 
-              <article>
-                <a href="img/bmw/bmw12.jpg" class="image"><img src="img/bmw/bmw11.jpg" title="BMW 3 Series" alt="" /></a>
-              </article>
-              <article>
-                <a href="img/bmw/bmw2.jpg" class="image"><img src="img/bmw/bmw2.jpg" title="BMW X5" alt="" /></a>
-              </article>
-              <article>
-                <a href="img/bmw/bmw31.jpg" class="image"><img src="img/bmw/bmw3.jpg" title=" BMW M3" alt="" /></a>
-              </article>
-              <article>
-                <a href="img/bmw/bmw41.jpg" class="image"><img src="img/bmw/bmw4.jpg" title="BMW 1 series" alt="" /></a>
-              </article>
-              <article>
-                <a href="img/bmw/bmw51.jpg" class="image" cl><img src="img/bmw/bmw5.jpg" title="7 series" alt="" /></a>
-              </article>
-              <article>
-                <a href="img/bmw/bmw61.jpg" class="image"><img src="img/bmw/bmw6.jpg" title="I8" alt="" /></a>
-              </article>
+                    <article>
+                        <a href="img/bmw/bmw12.jpg" class="image"><img src="img/bmw/bmw11.jpg" title="BMW 3 Series" alt="" /></a>
+                    </article>
+                    <article>
+                        <a href="img/bmw/bmw2.jpg" class="image"><img src="img/bmw/bmw2.jpg" title="BMW X5" alt="" /></a>
+                    </article>
+                    <article>
+                        <a href="img/bmw/bmw31.jpg" class="image"><img src="img/bmw/bmw3.jpg" title=" BMW M3" alt="" /></a>
+                    </article>
+                    <article>
+                        <a href="img/bmw/bmw41.jpg" class="image"><img src="img/bmw/bmw4.jpg" title="BMW 1 series" alt="" /></a>
+                    </article>
+                    <article>
+                        <a href="img/bmw/bmw51.jpg" class="image" cl><img src="img/bmw/bmw5.jpg" title="7 series" alt="" /></a>
+                    </article>
+                    <article>
+                        <a href="img/bmw/bmw61.jpg" class="image"><img src="img/bmw/bmw6.jpg" title="I8" alt="" /></a>
+                    </article>
+                </div>
+
+            </section>
+
+            <!-- this is the table underneath the gallery of hte cars with all the names of the cars, descrpition and prices. -->
+            <table class="alt">
+                <thead>
+                    <tr>
+                        <th>Name of Car</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BMW 3 Series</td>
+                        <td>Doors: 4 Engine: 2.0 Fuel: unleaded Economy: 49mpg Gears: Auto 0-62mph: 7.2s</td>
+                        <td>£24,800</td>
+                    </tr>
+                    <tr>
+                        <td>BMW X5</td>
+                        <td>Engine power: 306bhp Engine size: 3.0 litres Top speed: 147mph Drivetrain: Four Wheel Drive</td>
+                        <td>£46,260</td>
+                    </tr>
+                    <tr>
+                        <td>BMW M3</td>
+                        <td> Top speed: 155mph Economy: 34mpg turbocharged, petrol; Power: 425bhp Gearbox 7-spd dual-clutch automatic. </td>
+                        <td>£56,175</td>
+                    </tr>
+                    <tr>
+                        <td>BMW 1 Series</td>
+                        <td>Engine power: 143 bhp Engine size: 2.0 litres Acceleration: 9.0 seconds Top speed: 130 mph Drivetrain: Rear Wheel Drive</td>
+                        <td>£20,480</td>
+                    </tr>
+                    <tr>
+                        <td>BMW 7 Series</td>
+                        <td>Engine power: 228 bhp Engine size: 3.0 litres Acceleration: 7.8 seconds Top speed: 148 mph Drivetrain: Rear Wheel Drive</td>
+                        <td>£63,240</td>
+                    </tr>
+                    <tr>
+                        <td>BMW i8</td>
+                        <td>Max speed: 155.3mph Range: 37km battery-only Horsepower: 266kW</td>
+                        <td>£103,930</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+
+        <!-- Audi section-->
+        <!-- this section has the slideshow with the img class with all hte iamges and widths 100% -->
+        <section id="audi" class="audi wrapper">
+            <h1>AUDI</h1>
+            <div id="slideshow">
+                <div class="slideshow">
+                    <img class="mySlides" src="img/audi/audia.jpg" style="width:100%">
+
+                    <img class="mySlides" src="img/audi/audir.jpg" style="width:100%">
+
+                    <img class="mySlides" src="img/audi/audiq.jpg" style="width:100%">
+
+                    <img class="mySlides" src="img/audi/audi1.jpg" style="width:100%">
+                </div>
             </div>
 
         </section>
-      </section>
 
-
-      <!-- Audi -->
-      <section id="audi" class="audi wrapper">
-            <h1>AUDI</h1>
-        <div id="slideshow">
-        <div class="slideshow">
-        <img class="mySlides" src="img/audi/audia.jpg" style="width:100%">
-        
-        <img class="mySlides" src="img/audi/audir.jpg" style="width:100%">
-        
-        <img class="mySlides" src="img/audi/audiq.jpg" style="width:100%">
-        
-        <img class="mySlides" src="img/audi/audi1.jpg" style="width:100%">
-        </div>
-        </div>
-        
-      </section>
-
-    <!-- Mercedes -->
-      <section id="merc" class="merc wrapper">
+        <!-- Mercedes section-->
+        <!-- this section has all the images of the cars and the type which is radio which allows you to select on of the iamges and then it changes on the big image. -->
+        <section id="merc" class="merc wrapper">
             <h1>Mercedes</h1>
-        <div class="slider">
-  <input type="radio" name="slide_switch" id="id1"/>
-  <label for="id1">
+            <div class="slider">
+                <input type="radio" name="slide_switch" id="id1" />
+                <label for="id1">
     <img src="img/merc/merc1.jpg" width="100"/>
   </label>
-  <img src="img/merc/merc1.jpg"/>
-  
-  <input type="radio" name="slide_switch" id="id2" checked="checked"/>
-  <label for="id2">
+                <img src="img/merc/merc1.jpg" />
+
+                <input type="radio" name="slide_switch" id="id2" checked="checked" />
+                <label for="id2">
     <img src="img/merc/merc2.jpg" width="100"/>
   </label>
-  <img src="img/merc/merc2.jpg"/>
-  
-  <input type="radio" name="slide_switch" id="id3"/>
-  <label for="id3">
+                <img src="img/merc/merc2.jpg" />
+
+                <input type="radio" name="slide_switch" id="id3" />
+                <label for="id3">
     <img src="img/merc/merc3.jpg" width="100"/>
   </label>
-  <img src="img/merc/merc3.jpg"/>
-  
-  <input type="radio" name="slide_switch" id="id4"/>
-  <label for="id4">
+                <img src="img/merc/merc3.jpg" />
+
+                <input type="radio" name="slide_switch" id="id4" />
+                <label for="id4">
     <img src="img/merc/merc4.jpg" width="100"/>
   </label>
-  <img src="img/merc/merc4.jpg"/>
-  
-  <input type="radio" name="slide_switch" id="id5"/>
-  <label for="id5">
+                <img src="img/merc/merc4.jpg" />
+
+                <input type="radio" name="slide_switch" id="id5" />
+                <label for="id5">
     <img src="img/merc/merc5.jpg" width="100"/>
   </label>
-  <img src="img/merc/merc5.jpg"/>
-</div>
-        
-      </section>
+                <img src="img/merc/merc5.jpg" />
+            </div>
 
-         
-        
-     <!-- Footer -->
-      <footer id="footer">
+        </section>
 
-          <ul class="actions">
-            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a>
-            </li>
-           <li><a>&copy; Hamza Shahid</a></li>
-          </ul>
-            
-      </footer>
 
-     </section> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <script src="javascript.js"></script>
- <script src="slideshow.js"></script>
-  </body>
+
+        <!-- Footer -->
+        <!--the footer uses a list and all hte links to the social media is below but atm they just go to the top of the page and there is a copyright symbol-->
+        <footer id="footer">
+
+            <ul class="actions">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a>
+                </li>
+                <li><a>&copy; Hamza Shahid</a></li>
+            </ul>
+
+        </footer>
+
+    </section>
+    <!--jqurey script i used for the hover effect-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--link to my javascrpit file-->
+    <script src="javascript.js"></script>
+    <!--link to my slideshow javascript file-->
+    <script src="slideshow.js"></script>
+</body>
+
 </html>

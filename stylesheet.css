@@ -1,70 +1,73 @@
-*{
-margin: 0px;
-padding: 0px;
+/*this is for the javasript for the scroll for the frirst section to be covered 
+by the second section*/
+* {
+    margin: 0px;
+    padding: 0px;
 }
-
+/*this is for the garage section javascript to run*/
 html {
-  height: 100%;
+    height: 100%;
 }
-
-.wrapper 	{
-position: relative;
-width:100%;
-border:2px transparent;
-margin-right: auto;
-margin-left: auto;
-padding:0px;
-background-color: transparent;
-font-family:tahoma;
-text-decoration:none;
-text-align: center;
+/*this is for all the wrappers to be postioned on the page, to have a transparent
+boarder*/
+.wrapper {
+    position: relative;
+    width: 100%;
+    border: 2px transparent;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    background-color: transparent;
+    font-family: tahoma;
+    text-decoration: none;
+    text-align: center;
 }
-
-#carlogo{
-	float:left;
-	padding:40px;
+/*this is for the car logos to be set up and hte padding between them*/
+#carlogo {
+    float: left;
+    padding: 40px;
 }
-
+/*this is in the car wrapper section to set the page height,
+width, background color*/
 #content {
-height: 750px;
-width: 100%;
-margin-top:-10px; 
-background-color:grey;
-position: relative;
-z-index: 1;
+    height: 750px;
+    width: 100%;
+    margin-top: -10px;
+    background-color: grey;
+    position: relative;
+    z-index: 1;
 }
-
-
+/*this is for all the sections to be minimum height 100% */
 section {
     min-height: 100%;
 }
-
+/*this is the first section image and the z-index 
+allows the second section to stack over the first section*/
 #image {
-position: relative;
-z-index: -1;
+    position: relative;
+    z-index: -1;
 }
-
+/*this is the image of the garage section to cover the logos*/
 #image1 {
-position: absolute;
-left: 0;
-z-index: 10;
+    position: absolute;
+    left: 0;
+    z-index: 10;
 }
-
-
-a.button	{
-border:2px transparent;
-padding:2px 5px 2px 5px;
-border-radius:10px;
-background-color:transparent;
-color:#ffffff;
-font-family:tahoma;
-text-decoration:none;
-text-align:center;
-transition-duration: 0.4s;
-overflow: hidden;
-cursor: pointer;
+/*this is the deals button settings*/
+a.button {
+    border: 2px transparent;
+    padding: 2px 5px 2px 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: tahoma;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
 }
-
+/*this is the setting on where to place it and color of it and transition time*/
 a.button:after {
     content: "";
     background: #a3a3a3;
@@ -77,35 +80,39 @@ a.button:after {
     opacity: 0;
     transition: all 0.8s
 }
+/*after clicking the deals button it has a effect which shows you have clicked on it
+this is the opacity of it*/
 a.button:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
 }
-
-a.button:hover{
-color:#a3a3a3;}
-
+/*when you hover over the deals button is changes to a light grey*/
+a.button:hover {
+    color: #a3a3a3;
+}
+/*this is hte size of the font for the three car sections*/
 h1 {
     font-size: 200%;
-   color: white;
-  }
+    color: white;
+}
+/*this is the size of the font for the deals on wheel button*/
 h2 {
     font-size: 300%;
-  }
-
+}
+/*this keeps the navbar height and width*/
 #header nav {
     width: 50%;
     margin: 0 auto;
     height: 3em;
     line-height: 1em;
 }
-
+/*this helps keep it to the center*/
 #header nav ul {
-  margin-left: 22.5%;
+    margin-left: 22.5%;
 }
-
+/*this is for the navbar so its fixed*/
 #header {
     position: fixed;
     z-index: 10000;
@@ -116,149 +123,140 @@ h2 {
     height: 3em;
     line-height: 3em;
 }
-
+/*this is the setting for the navbar*/
+p {
+    line-height: 1.2em;
+    color: white;
+}
+/*this is for the header so when the screen has changed size it will change the 
+text size to keep it responsive*/
 @media screen and (max-width: 571px) {
     p {
-      font-size: 10px;
-        }
-       }
-
-
+        font-size: 10px;
+    }
+}
+/*this floats it left and gets rid of the bullit point for the navbar and footer*/
 li {
-    float:left;
+    float: left;
     list-style-type: none;
 }
+/*this is for footer list to set the font and spacing */
 li a {
     display: block;
-    color: white;
     padding: 17px;
     text-decoration: none;
-    font-family:Arial;
+    font-family: Arial;
     letter-spacing: 0.125em;
 }
-
-footer li a{
-  color: black;
+/*this is for the footer section text to be black*/
+footer li a {
+    color: black;
 }
-
-
-#dealsbutton{
-position: absolute;
-top: 40%;
-left: 15%;
+/*this is hte dealsbutton this sets it on the page in that position*/
+#dealsbutton {
+    position: absolute;
+    top: 40%;
+    left: 15%;
 }
-
+/*this is for the deals on wheel text to stay fitted
+ when the screen shrinks below 1000px*/
 @media screen and (max-width: 1000px) {
     h2 {
-      font-size: 25px;
-        }
-       }
+        font-size: 25px;
+    }
+}
+/*this is for the deals on wheel text to stay fitted
+ when the screen shrinks below 571px*/
 @media screen and (max-width: 571px) {
     h2 {
-      font-size: 15px;
-        }
-       }
-
-
-p
-{ padding: 0 0 20px 0;
-  line-height: 1.7em;
-color: white}
-
-#stylesheets {
-    text-align: left;
+        font-size: 15px;
+    }
 }
-
+/*this is to set the hover effect positon and centered*/
 .hovereffect {
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
 }
-
+/*this is to set where the hover effect shuld be placed just over the image*/
 .hovereffect .overlay {
-  position: absolute;
-  overflow: hidden;
-
-  width:  350px;
-  height: 250px;
-  left: 10%;
-  top: 14%;
-  border-bottom: 1px solid #FFF;
-  border-top: 1px solid #FFF;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(0,1);
-  -ms-transform: scale(0,1);
-  transform: scale(0,1);
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    height: 250px;
+    left: 10%;
+    top: 14%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
 }
-
+/*this is hte overlay opacity when hovered*/
 .hovereffect:hover .overlay {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
-
-  .hovereffect img {
-  display: block;
-  position: relative;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-  width:  80%;
-  height: 250px;
-  }
-
-  .hovereffect:hover img {
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
-  filter: brightness(0.6);
-  -webkit-filter: brightness(0.6);
-  }
-
-  .hovereffect h2 {
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  background-color: transparent;
-  color: #FFF;
-  padding: 1em 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,-100%,0);
-  transform: translate3d(0,-100%,0);
-  }
-
-  .hovereffect a, hovereffect p {
-  color: #FFF;
-  padding: 1em 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
-  }
-
-  .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  }
-
-  
-
-  article{
+/*this allows the images spaced out between each other*/
+.hovereffect img {
     display: block;
-  }
-
-  .gallery {
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    width: 80%;
+    height: 250px;
+}
+/*this is the css for the heading when hovered, how the headers should be set*/
+.hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+/*this does the hover transition*/
+.hovereffect a,
+hovereffect p {
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+/*this is for the text and heading the opacity level when hovered over*/
+.hovereffect:hover a,
+.hovereffect:hover p,
+.hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+/*Displays an artical as a block element*/
+article {
+    display: block;
+}
+/*this is for the gallery to have the fixed squares and set neatly side by side*/
+.gallery {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -269,99 +267,119 @@ color: white}
     flex-wrap: wrap;
     width: 45em;
     max-width: 100%;
-  }
-
-
-  .image {
+}
+/*The margin-top property sets the top margin of an element.*/
+.image {
     margin-top: 1%;
-  }
-
-  #bmw {
-  background-image: url("img/bg4.jpg");
-  }
-
+}
+/*bmw section background image*/
+#bmw {
+    background-image: url("img/bg4.jpg");
+}
+/*this is hte width of the gallery and the positioning on the screen*/
+.gallery article {
+    width: 50%;
+    position: relative;
+}
+/*this allows the gallery in the bmw section to shrink after 480px*/
+@media screen and (max-width: 480px) {
     .gallery article {
-      width: 50%;
-      position: relative;
-   
+        width: 100%;
     }
-
-
-    @media screen and (max-width: 480px) {
-    .gallery article {
-          width: 100%;
-        }
-       }
-       
-
-  #audi {
-      background-image: url("img/bg4.jpg");
-  }
-
-  #slideshow {
-      margin: 0 auto;
-      max-width:800px
-      }
-
-
-  #merc {
-      background-image: url("img/bg4.jpg");
-  height: 500px;
+}
+/*this is the image backgrounf for the audi section*/
+#audi {
+    background-image: url("img/bg4.jpg");
+}
+/*this is the css for the slideshow to center it and the max width of it*/
+#slideshow {
+    margin: 0 auto;
+    max-width: 800px
+}
+/*this is the image background of mercedes section*/
+#merc {
+    background-image: url("img/bg4.jpg");
+    height: 500px;
+}
+.slider {
+    width: 640px;
+    /*Same as width of the large image*/
     
-  }
-  .slider{
-  width: 640px; /*Same as width of the large image*/
-  position: relative;
-  padding-top: 320px; /*this allows the labels to come down*/
-  margin: 100px auto;
-  /*shadow effect around the image*/
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
-  margin: 0 auto;
-  }
+    position: relative;
+    padding-top: 320px;
+    /*this allows the labels to come down*/
+    
+    margin: 100px auto;
+    /*shadow effect around the image*/
+    
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
+}
+/*this adds in the transitions*/
 
-  /*this adds in the transitions*/
-  .slider>img{
-  position: absolute;
-  left: 0; top: 0;
-  transition: all 0.5s;
-  }
+.slider>img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+}
+.slider input[name='slide_switch'] {
+    display: none;
+}
+.slider label {
+/*spacing for the thumbnails*/
+    
+    margin: 18px 0 0 18px;
+    border: 3px solid #999;
+    float: left;
+    cursor: pointer;
+    transition: all 0.5s;
+/*low opacity*/
+    
+    opacity: 0.6;
+}
+.slider label img {
+    display: block;
+}
+/*click effects*/
 
-  .slider input[name='slide_switch'] {
-  display: none;
-  }
+.slider input[name='slide_switch']:checked+label {
+    border-color: #666;
+    opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
 
-  .slider label {
-  /*spacing for the thumbnails*/
-  margin: 18px 0 0 18px;
-  border: 3px solid #999;
-  float: left;
-  cursor: pointer;
-  transition: all 0.5s;
-  
-  /*low opacity*/
-  opacity: 0.6;
-  }
-
-  .slider label img{
-  display: block;
-  }
-
-  /*click effects*/
-  .slider input[name='slide_switch']:checked+label {
-  border-color: #666;
-  opacity: 1;
-  }
-
-  /*Clicking any thumbnail now should change its opacity(style)*/
-  .slider input[name='slide_switch'] ~ img {
-  opacity: 0;
-  transform: scale(1.1);
-  }
-  /*This hides all main images at a 110% size
+.slider input[name='slide_switch'] ~ img {
+    opacity: 0;
+    transform: scale(1.1);
+}
+/*This hides all main images at a 110% size
   On click the images will be displayed at normal size to complete the effect
   */
-  .slider input[name='slide_switch']:checked+label+img {
-  opacity: 1;
-  transform: scale(1);
-  }
-       }
+
+.slider input[name='slide_switch']:checked+label+img {
+    opacity: 1;
+    transform: scale(1);
+}
+}
+/* This specifies whether or not to clip the left/right edges of the table */
+.table-wrapper {
+    overflow-x: auto;
+}
+/*This is the width of the table and the color of the text*/
+table {
+    width: 50%;
+    color: white
+}
+/*This is the padding for the table*/
+table td {
+    padding: 0.2em 0.2em;
+}
+/*This is hte font size of the table and padding between the table of each section 
+and the text align which is to the left*/
+table th {
+    font-size: 0.9em;
+    font-weight: 900;
+    padding: 0 0.75em 0.75em 0.75em;
+    text-align: left;
+}
