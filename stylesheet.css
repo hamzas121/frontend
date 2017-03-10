@@ -177,6 +177,7 @@ footer li a {
 
 .hovereffect {
     height: 100%;
+    width:25%;
     float: left;
     overflow: hidden;
     position: relative;
@@ -217,7 +218,7 @@ footer li a {
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
     width: 80%;
-    height: 250px;
+    
 }
 /*this is the css for the heading when hovered, how the headers should be set*/
 
@@ -239,7 +240,7 @@ footer li a {
 /*this does the hover transition*/
 
 .hovereffect a,
-hovereffect p {
+.hovereffect p {
     color: #FFF;
     padding: 1em 0;
     opacity: 0;
@@ -311,17 +312,15 @@ article {
     background-image: url("img/bg4.jpg");
     height: 500px;
 }
+
 .slider {
     width: 640px;
     /*Same as width of the large image*/
-    
     position: relative;
     padding-top: 320px;
     /*this allows the labels to come down*/
-    
     margin: 100px auto;
     /*shadow effect around the image*/
-    
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
     margin: 0 auto;
 }
@@ -379,23 +378,31 @@ article {
 }
 /*This is the width of the table and the color of the text*/
 
-table {
-    width: 50%;
-    color: white
+table.alt {
+    width: 100%;
+    margin-left: 0%;
+
 }
 /*This is the padding for the table*/
 
-table td {
+.table td {
     padding: 0.2em 0.2em;
 }
+
 /*This is hte font size of the table and padding between the table of each section 
 and the text align which is to the left*/
 
-table th {
+.table thead tr th, .table tbody tr td {
     font-size: 0.9em;
     font-weight: 900;
     padding: 0 0.75em 0.75em 0.75em;
     text-align: left;
+
+}
+
+.test {
+    color: white;
+
 }
 /*this is for the header so when the screen has changed size it will change the 
 text size to keep it responsive*/

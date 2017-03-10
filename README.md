@@ -1,6 +1,7 @@
+## Front End Web Development
 ## Introduction
 
-This website is a car showroom webiste which allows the users to look at diffrent cars which are reasonably priced and overpriced, it is also a single page website. The three car showrooms which are displayed on the website are BMW, Mercedes and Audi. The concept of this website was for me to show my father on what car i should buy, I added some cars which overpriced as well so that the cars which he would look at are the ones i would want. For other users they can also choose to do the same aand have a look at the cars which are reasonably priced.
+This website is a car showroom webiste, which allows the users to look at diffrent cars which are reasonably priced and overpriced, it is also a single page website. The three car showrooms which are displayed on the website are BMW, Mercedes and Audi. The concept of this website was for me to show my father on what car i should buy, I added some cars which overpriced as well so that the cars which he would look at are the ones i would want. For other users they can also choose to do the same aand have a look at the cars which are reasonably priced.
 
 ## Design
 
@@ -21,26 +22,70 @@ The fourth section is the Audi section in this section i created a slideshow wit
 The fifth section is the mercedes section in this section is a image slider which when the small images are clicked on the big container changed into that image and has a nice pulsing effect as well.
 ![image of mercedes section](sketchs/mercpart.png)
 
-Fianlly the footer has my copy right icon and my name and links to my instagram, twitter and facebook which i can add but did not, so it just returns to the top of the page.
+Finally the footer has my copy right icon and my name and links to my instagram, twitter and facebook which i can add but did not, so it just returns to the top of the page.
 ![image of footer section](sketchs/footer.png)
+
 parc princple
 
-## Testing
+user testing-
+Compatibility testing-
+browser testing- browsers work or not
+userability testing- 
+validate html only not css
+talk about what to improve
+
+## Example code
 
 HTML-
+```html
+<article>
+ <a href="img/bmw/bmw12.jpg" class="image"><img src="img/bmw/bmw11.jpg" title="BMW 3 Series" alt="" /></a>
+ </article>
+```
+This code from the HTML is from the BMW section which allows the image to be seen and when clicked the image enlarges.
 
 CSS-
-
+```css
+.slider {
+    width: 640px;
+    position: relative;
+    padding-top: 320px;
+    margin: 100px auto;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
+}
+```
+This code for the css us for the slider on the Mercedes section this shows the width of the image and the images of the small iamges are the same width. padding-top allows the lables to come down underneath the big image. The shadow effect gives the effect of the image standing out of the background.
+ 
 Javascript-
+```javascript
+$('.hov').hover(function() {
+        $("#image1").slideUp(1000);
+         if page reload it will return
+        $.doTimeout(300, function() {
+            hideClosedSearchLink();
+            showHomeSearch();
+        });
+        $(this).unbind('mouseenter mouseleave')
+    });
+});
+```
+This javascript code slides the image up when hovered over the image will slide up and after it has disappeared it does not reapear after that.
 
 
 ## Reference
 
 Tools used:
-sublime text-
-Haroopad-
-pencile project-
+
+Sublime text- The text editor i used for my website.
+
+Haroopad- I used this to make my readme.md file and it helped me with inserting the images into the file and setting it out in a nice layout.
+
+Pencil project- I used this to desgin the sketchs of the website.
 
 Frameworks used:
-jquery
-bootstrap
+
+jquery- Used jquery to hide and show the garage in my website and for my website to smooth scroll when the deals on wheels button is clicked.
+
+bootstrap- Used this to make the website responsive.
+
