@@ -13,7 +13,7 @@ The first part is the main section of the website, this includes the navbar that
 The garage section of the website hides the showrooms whihc are further below, when the button Deals on Wheels is clicked and it smooth scrols down the image of the garage slides up as if its opening up. Underneath the garage image there are three logos with a hover effect which also allows you to go to their sections and shows you which showroom you are hovering over.
 ![image of second section](sketchs/secondpart.png)
 
-The third section is the BMW section which is the first showroom, this section shows all six images of the cars which i choose and they are in a article which is used to have them placed in the grid like formation, I then procceded to set them closely with padding. when the images are clicked on they enlarge so the user can have a better look at the car. In my case so that my dad could see the images better. below the iamges is a table with all hte car names, short description and their prices.
+The third section is the BMW section which is the first showroom, this section shows all six images of the cars which i choose and they are in a article which is used to have them placed in the grid like formation, I then procceded to set them closely with padding. when the images are clicked on they enlarge so the user can have a better look at the car. In my case so that my dad could see the images better. below the images is a table with all hte car names, short description and their prices.
 ![image of bmw section](sketchs/bmwpart.png)
 
 The fourth section is the Audi section in this section i created a slideshow with the images of the cars, in my first design i was going to just insert the images on the page similar to the BMW section.
@@ -25,14 +25,27 @@ The fifth section is the mercedes section in this section is a image slider whic
 Finally the footer has my copy right icon and my name and links to my instagram, twitter and facebook which i can add but did not, so it just returns to the top of the page.
 ![image of footer section](sketchs/footer.png)
 
-parc princple
+##Compatibility Testing
+| Devices       | Yes/No        |
+| ------------- |:-------------:|
+| PC            | Yes           |
+| Laptop        | Yes           |
+| Tablet        | Yes           |
+| Phone         | Yes           |
 
-user testing-
-Compatibility testing-
-browser testing- browsers work or not
-userability testing- 
-validate html only not css
-talk about what to improve
+##Browser Testing
+| Browsers       | Yes/No       |
+| ------------- |:-------------:|
+| Google Chrome | Yes           |
+| Firefox       | Yes           |
+| Safari        | Yes           |
+| Opera         | Yes           |
+
+##Improvements
+I would improve the Mercedes section so that its responsive so that it it shrinks with the page. I would also change the garage section so that the container would shrink so that it does not overflow when it shrinks.
+
+validate html 
+
 
 ## Example code
 

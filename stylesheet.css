@@ -315,12 +315,12 @@ article {
 
 .slider {
     width: 640px;
-    /*Same as width of the large image*/
+/*Same as width of the large image*/
     position: relative;
     padding-top: 320px;
-    /*this allows the labels to come down*/
+/*this allows the labels to come down*/
     margin: 100px auto;
-    /*shadow effect around the image*/
+/*shadow effect around the image*/
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
     margin: 0 auto;
 }
