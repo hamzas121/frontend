@@ -31,6 +31,18 @@ boarder*/
     float: left;
     padding: 40px;
 }
+#carlogo1 {
+    float: left;
+    padding: 40px;
+}
+#carlogo2 {
+    float: left;
+    padding: 40px;
+}
+#carlogo3 {
+    float: left;
+    padding: 40px;
+}
 /*this is in the car wrapper section to set the page height,
 width, background color*/
 
@@ -411,12 +423,18 @@ text size to keep it responsive*/
     p {
         font-size: 10px;
     }
+    #header {
+        height: 1000px;
+    }
 }
 /*this allows the gallery in the bmw section to shrink after 480px*/
 
 @media screen and (max-width: 480px) {
     .gallery article {
         width: 100%;
+    }
+    #header {
+        height: 100px;
     }
 }
 /*this is for the deals on wheel text to stay fitted
@@ -426,6 +444,13 @@ text size to keep it responsive*/
     h2 {
         font-size: 25px;
     }
+    #header {
+        height: 100px;
+    }
+    .hovereffect {
+        width: 50%;
+        height: auto;
+    }
 }
 /*this is for the deals on wheel text to stay fitted
  when the screen shrinks below 571px*/
@@ -434,6 +459,7 @@ text size to keep it responsive*/
     h2 {
         font-size: 15px;
     }
+
 }
 /*this is for the table on bmw section stay as a table
  when the screen shrinks below 1000px*/
